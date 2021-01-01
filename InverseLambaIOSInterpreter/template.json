@@ -1,0 +1,19 @@
+{
+    "uielement": [
+        {
+            "type": "button",
+            "value": "testButton",
+            "x": "100",
+            "y": "100",
+            "width": "100",
+            "height": "100"
+        },
+        {
+            "type": "text",
+            "value": "testText",
+            "x": "100",
+            "y": "100",
+            "fontsize": "25"
+        }
+    ]
+}

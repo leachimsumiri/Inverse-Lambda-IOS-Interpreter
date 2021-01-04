@@ -15,6 +15,13 @@
 		076E775F259FAA6C0081BC04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076E775D259FAA6C0081BC04 /* LaunchScreen.storyboard */; };
 		076E7769259FAAAB0081BC04 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 076E7768259FAAAB0081BC04 /* SwiftyJSON */; };
 		076E776C259FAABB0081BC04 /* template.json in Resources */ = {isa = PBXBuildFile; fileRef = 076E776B259FAABB0081BC04 /* template.json */; };
+		0797562625A3C01400E5A439 /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797562525A3C01400E5A439 /* JSONReader.swift */; };
+		0797562925A3C0AB00E5A439 /* ButtonGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797562825A3C0AB00E5A439 /* ButtonGenerator.swift */; };
+		0797562E25A3C53700E5A439 /* ButtonGenerator.swift in Resources */ = {isa = PBXBuildFile; fileRef = 0797562825A3C0AB00E5A439 /* ButtonGenerator.swift */; };
+		0797562F25A3C53700E5A439 /* JSONReader.swift in Resources */ = {isa = PBXBuildFile; fileRef = 0797562525A3C01400E5A439 /* JSONReader.swift */; };
+		0797563025A3C53700E5A439 /* AppDelegate.swift in Resources */ = {isa = PBXBuildFile; fileRef = 076E7752259FAA6B0081BC04 /* AppDelegate.swift */; };
+		0797563125A3C53700E5A439 /* SceneDelegate.swift in Resources */ = {isa = PBXBuildFile; fileRef = 076E7754259FAA6B0081BC04 /* SceneDelegate.swift */; };
+		0797563225A3C53700E5A439 /* ViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 076E7756259FAA6B0081BC04 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,8 @@
 		076E775E259FAA6C0081BC04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		076E7760259FAA6C0081BC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076E776B259FAABB0081BC04 /* template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = template.json; sourceTree = "<group>"; };
+		0797562525A3C01400E5A439 /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
+		0797562825A3C0AB00E5A439 /* ButtonGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,8 @@
 		076E7751259FAA6B0081BC04 /* InverseLambaIOSInterpreter */ = {
 			isa = PBXGroup;
 			children = (
+				0797562C25A3C0C200E5A439 /* UIGenerators */,
+				0797562B25A3C0B100E5A439 /* Utils */,
 				076E7752259FAA6B0081BC04 /* AppDelegate.swift */,
 				076E7754259FAA6B0081BC04 /* SceneDelegate.swift */,
 				076E7756259FAA6B0081BC04 /* ViewController.swift */,
@@ -72,6 +83,22 @@
 			path = InverseLambaIOSInterpreter;
 			sourceTree = "<group>";
 		};
+		0797562B25A3C0B100E5A439 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0797562525A3C01400E5A439 /* JSONReader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0797562C25A3C0C200E5A439 /* UIGenerators */ = {
+			isa = PBXGroup;
+			children = (
+				0797562825A3C0AB00E5A439 /* ButtonGenerator.swift */,
+			);
+			path = UIGenerators;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,8 +107,8 @@
 			buildConfigurationList = 076E7763259FAA6C0081BC04 /* Build configuration list for PBXNativeTarget "InverseLambaIOSInterpreter" */;
 			buildPhases = (
 				076E774B259FAA6B0081BC04 /* Sources */,
-				076E774C259FAA6B0081BC04 /* Frameworks */,
 				076E774D259FAA6B0081BC04 /* Resources */,
+				076E774C259FAA6B0081BC04 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0797562E25A3C53700E5A439 /* ButtonGenerator.swift in Resources */,
+				0797562F25A3C53700E5A439 /* JSONReader.swift in Resources */,
+				0797563025A3C53700E5A439 /* AppDelegate.swift in Resources */,
+				0797563125A3C53700E5A439 /* SceneDelegate.swift in Resources */,
+				0797563225A3C53700E5A439 /* ViewController.swift in Resources */,
 				076E775F259FAA6C0081BC04 /* LaunchScreen.storyboard in Resources */,
 				076E776C259FAABB0081BC04 /* template.json in Resources */,
 				076E775C259FAA6C0081BC04 /* Assets.xcassets in Resources */,
@@ -149,6 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0797562925A3C0AB00E5A439 /* ButtonGenerator.swift in Sources */,
+				0797562625A3C01400E5A439 /* JSONReader.swift in Sources */,
 				076E7757259FAA6B0081BC04 /* ViewController.swift in Sources */,
 				076E7753259FAA6B0081BC04 /* AppDelegate.swift in Sources */,
 				076E7755259FAA6B0081BC04 /* SceneDelegate.swift in Sources */,

@@ -17,5 +17,8 @@ class ViewController: UIViewController {
         
         let button = ButtonGenerator.generateButton(json: json!["uielement"][0]);
         self.view.addSubview(button);
+        
+        let label = LabelGenerator.generateLabel(json: json!["uielement"][1]);
+        self.view.addSubview(label);
     }
 }

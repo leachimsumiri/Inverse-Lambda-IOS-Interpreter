@@ -22,6 +22,7 @@
 		0797563025A3C53700E5A439 /* AppDelegate.swift in Resources */ = {isa = PBXBuildFile; fileRef = 076E7752259FAA6B0081BC04 /* AppDelegate.swift */; };
 		0797563125A3C53700E5A439 /* SceneDelegate.swift in Resources */ = {isa = PBXBuildFile; fileRef = 076E7754259FAA6B0081BC04 /* SceneDelegate.swift */; };
 		0797563225A3C53700E5A439 /* ViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 076E7756259FAA6B0081BC04 /* ViewController.swift */; };
+		07C8280D25A4FEB600C79E88 /* LabelGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8280C25A4FEB600C79E88 /* LabelGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		076E776B259FAABB0081BC04 /* template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = template.json; sourceTree = "<group>"; };
 		0797562525A3C01400E5A439 /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 		0797562825A3C0AB00E5A439 /* ButtonGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGenerator.swift; sourceTree = "<group>"; };
+		07C8280C25A4FEB600C79E88 /* LabelGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				0797562825A3C0AB00E5A439 /* ButtonGenerator.swift */,
+				07C8280C25A4FEB600C79E88 /* LabelGenerator.swift */,
 			);
 			path = UIGenerators;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C8280D25A4FEB600C79E88 /* LabelGenerator.swift in Sources */,
 				0797562925A3C0AB00E5A439 /* ButtonGenerator.swift in Sources */,
 				0797562625A3C01400E5A439 /* JSONReader.swift in Sources */,
 				076E7757259FAA6B0081BC04 /* ViewController.swift in Sources */,

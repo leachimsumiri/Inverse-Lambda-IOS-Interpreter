@@ -17,13 +17,13 @@ class LabelGenerator {
         
         let xCenter = json["x"].intValue + (json["width"].intValue / 2);
         let yCenter = json["y"].intValue + (json["height"].intValue / 2);
-        label.center = CGPoint(x: xCenter, y: yCenter)
+        label.center = CGPoint(x: xCenter, y: yCenter);
         
         let labelValue = json["value"].stringValue;
-        label.text = labelValue
+        label.text = labelValue;
         
         let fontSize = json["fontsize"].intValue;
-        label.font.withSize(CGFloat(fontSize));
+        label.font = .systemFont(ofSize: CGFloat(fontSize));
         
         return label;
     }

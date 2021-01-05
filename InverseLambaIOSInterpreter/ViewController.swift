@@ -20,5 +20,8 @@ class ViewController: UIViewController {
         
         let label = LabelGenerator.generateLabel(json: json!["uielement"][1]);
         self.view.addSubview(label);
+        
+        let textView = TextViewGenerator.generateTextView(json: json!["uielement"][2]);
+        self.view.addSubview(textView);
     }
 }

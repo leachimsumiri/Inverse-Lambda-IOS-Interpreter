@@ -23,6 +23,11 @@
 		0797563125A3C53700E5A439 /* SceneDelegate.swift in Resources */ = {isa = PBXBuildFile; fileRef = 076E7754259FAA6B0081BC04 /* SceneDelegate.swift */; };
 		0797563225A3C53700E5A439 /* ViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 076E7756259FAA6B0081BC04 /* ViewController.swift */; };
 		07C8280D25A4FEB600C79E88 /* LabelGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8280C25A4FEB600C79E88 /* LabelGenerator.swift */; };
+		07C8281125A5028200C79E88 /* TextViewGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8281025A5028200C79E88 /* TextViewGenerator.swift */; };
+		07C8281425A508D700C79E88 /* UIColorHexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C8281325A508D700C79E88 /* UIColorHexExtension.swift */; };
+		07C8281625A5092D00C79E88 /* LabelGenerator.swift in Resources */ = {isa = PBXBuildFile; fileRef = 07C8280C25A4FEB600C79E88 /* LabelGenerator.swift */; };
+		07C8281725A5092D00C79E88 /* TextViewGenerator.swift in Resources */ = {isa = PBXBuildFile; fileRef = 07C8281025A5028200C79E88 /* TextViewGenerator.swift */; };
+		07C8281825A5092D00C79E88 /* UIColorHexExtension.swift in Resources */ = {isa = PBXBuildFile; fileRef = 07C8281325A508D700C79E88 /* UIColorHexExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,8 @@
 		0797562525A3C01400E5A439 /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 		0797562825A3C0AB00E5A439 /* ButtonGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGenerator.swift; sourceTree = "<group>"; };
 		07C8280C25A4FEB600C79E88 /* LabelGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelGenerator.swift; sourceTree = "<group>"; };
+		07C8281025A5028200C79E88 /* TextViewGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewGenerator.swift; sourceTree = "<group>"; };
+		07C8281325A508D700C79E88 /* UIColorHexExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHexExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				0797562525A3C01400E5A439 /* JSONReader.swift */,
+				07C8281325A508D700C79E88 /* UIColorHexExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -98,6 +106,7 @@
 			children = (
 				0797562825A3C0AB00E5A439 /* ButtonGenerator.swift */,
 				07C8280C25A4FEB600C79E88 /* LabelGenerator.swift */,
+				07C8281025A5028200C79E88 /* TextViewGenerator.swift */,
 			);
 			path = UIGenerators;
 			sourceTree = "<group>";
@@ -165,6 +174,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C8281625A5092D00C79E88 /* LabelGenerator.swift in Resources */,
+				07C8281725A5092D00C79E88 /* TextViewGenerator.swift in Resources */,
+				07C8281825A5092D00C79E88 /* UIColorHexExtension.swift in Resources */,
 				0797562E25A3C53700E5A439 /* ButtonGenerator.swift in Resources */,
 				0797562F25A3C53700E5A439 /* JSONReader.swift in Resources */,
 				0797563025A3C53700E5A439 /* AppDelegate.swift in Resources */,
@@ -187,8 +199,10 @@
 				07C8280D25A4FEB600C79E88 /* LabelGenerator.swift in Sources */,
 				0797562925A3C0AB00E5A439 /* ButtonGenerator.swift in Sources */,
 				0797562625A3C01400E5A439 /* JSONReader.swift in Sources */,
+				07C8281425A508D700C79E88 /* UIColorHexExtension.swift in Sources */,
 				076E7757259FAA6B0081BC04 /* ViewController.swift in Sources */,
 				076E7753259FAA6B0081BC04 /* AppDelegate.swift in Sources */,
+				07C8281125A5028200C79E88 /* TextViewGenerator.swift in Sources */,
 				076E7755259FAA6B0081BC04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftyJSON
 
-func readJson(fileName: String) -> JSON? {
+func lambdaLoader(fileName: String) -> JSON? {
     var json = JSON();
     
     guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else { return nil };

@@ -12,16 +12,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let json = readJson(fileName: "template");
-        print(json!);
+        let lambdaFileFormat = lambdaLoader(fileName: "template")!;
+        print(lambdaFileFormat);
         
-        let button = ButtonGenerator.generateButton(json: json!["uielement"][0]);
-        self.view.addSubview(button);
+        let that = self;
         
-        let label = LabelGenerator.generateLabel(json: json!["uielement"][1]);
-        self.view.addSubview(label);
-        
-        let textView = TextViewGenerator.generateTextView(json: json!["uielement"][2]);
-        self.view.addSubview(textView);
+        for (index, object) in lambdaFileFormat {
+            if(object["typ"].stringValue == "but00"){
+                let button = ButtonGenerator.generateButton(lambdaFileFormat: object);
+                that.view.addSubview(button);
+            } else if(object["typ"].stringValue == "num00"){
+                let textField = TextFieldGenerator.generateTextView(lambdaFileFormat: object);
+                that.view.addSubview(textField);
+            }
+        }
     }
 }

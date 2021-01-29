@@ -12,17 +12,17 @@ import SwiftyJSON
 import UIKit
 
 class LabelGenerator {
-    static func generateLabel(json: JSON) -> UILabel{
-        let label = UILabel(frame: CGRect(x: CGFloat(json["x"].intValue), y: CGFloat(json["y"].intValue), width: CGFloat(json["width"].intValue), height: CGFloat(json["height"].intValue)));
+    static func generateLabel(lambdaFileFormat: JSON) -> UILabel{
+        let label = UILabel(frame: CGRect(x: CGFloat(lambdaFileFormat["x"].intValue), y: CGFloat(lambdaFileFormat["y"].intValue), width: CGFloat(lambdaFileFormat["width"].intValue), height: CGFloat(lambdaFileFormat["height"].intValue)));
         
-        let xCenter = json["x"].intValue + (json["width"].intValue / 2);
-        let yCenter = json["y"].intValue + (json["height"].intValue / 2);
+        let xCenter = lambdaFileFormat["x"].intValue + (lambdaFileFormat["width"].intValue / 2);
+        let yCenter = lambdaFileFormat["y"].intValue + (lambdaFileFormat["height"].intValue / 2);
         label.center = CGPoint(x: xCenter, y: yCenter);
         
-        let labelValue = json["value"].stringValue;
+        let labelValue = lambdaFileFormat["value"].stringValue;
         label.text = labelValue;
         
-        let fontSize = json["fontsize"].intValue;
+        let fontSize = lambdaFileFormat["fontsize"].intValue;
         label.font = .systemFont(ofSize: CGFloat(fontSize));
         
         return label;

@@ -14,7 +14,7 @@
 		076E775C259FAA6C0081BC04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076E775B259FAA6C0081BC04 /* Assets.xcassets */; };
 		076E775F259FAA6C0081BC04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076E775D259FAA6C0081BC04 /* LaunchScreen.storyboard */; };
 		076E7769259FAAAB0081BC04 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 076E7768259FAAAB0081BC04 /* SwiftyJSON */; };
-		076E776C259FAABB0081BC04 /* template.json in Resources */ = {isa = PBXBuildFile; fileRef = 076E776B259FAABB0081BC04 /* template.json */; };
+		076E776C259FAABB0081BC04 /* old_template.json in Resources */ = {isa = PBXBuildFile; fileRef = 076E776B259FAABB0081BC04 /* old_template.json */; };
 		0797562625A3C01400E5A439 /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797562525A3C01400E5A439 /* JSONReader.swift */; };
 		0797562925A3C0AB00E5A439 /* ButtonGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797562825A3C0AB00E5A439 /* ButtonGenerator.swift */; };
 		0797562E25A3C53700E5A439 /* ButtonGenerator.swift in Resources */ = {isa = PBXBuildFile; fileRef = 0797562825A3C0AB00E5A439 /* ButtonGenerator.swift */; };
@@ -28,6 +28,8 @@
 		07C8281625A5092D00C79E88 /* LabelGenerator.swift in Resources */ = {isa = PBXBuildFile; fileRef = 07C8280C25A4FEB600C79E88 /* LabelGenerator.swift */; };
 		07C8281725A5092D00C79E88 /* TextViewGenerator.swift in Resources */ = {isa = PBXBuildFile; fileRef = 07C8281025A5028200C79E88 /* TextViewGenerator.swift */; };
 		07C8281825A5092D00C79E88 /* UIColorHexExtension.swift in Resources */ = {isa = PBXBuildFile; fileRef = 07C8281325A508D700C79E88 /* UIColorHexExtension.swift */; };
+		07FBB43D25C4596C005F60C4 /* template.json in Resources */ = {isa = PBXBuildFile; fileRef = 07FBB43C25C4596C005F60C4 /* template.json */; };
+		07FBB44025C46C45005F60C4 /* TextFieldGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBB43F25C46C45005F60C4 /* TextFieldGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,12 +41,14 @@
 		076E775B259FAA6C0081BC04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		076E775E259FAA6C0081BC04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		076E7760259FAA6C0081BC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		076E776B259FAABB0081BC04 /* template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = template.json; sourceTree = "<group>"; };
+		076E776B259FAABB0081BC04 /* old_template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = old_template.json; sourceTree = "<group>"; };
 		0797562525A3C01400E5A439 /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 		0797562825A3C0AB00E5A439 /* ButtonGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGenerator.swift; sourceTree = "<group>"; };
 		07C8280C25A4FEB600C79E88 /* LabelGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelGenerator.swift; sourceTree = "<group>"; };
 		07C8281025A5028200C79E88 /* TextViewGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewGenerator.swift; sourceTree = "<group>"; };
 		07C8281325A508D700C79E88 /* UIColorHexExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHexExtension.swift; sourceTree = "<group>"; };
+		07FBB43C25C4596C005F60C4 /* template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = template.json; sourceTree = "<group>"; };
+		07FBB43F25C46C45005F60C4 /* TextFieldGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,8 @@
 				076E775B259FAA6C0081BC04 /* Assets.xcassets */,
 				076E775D259FAA6C0081BC04 /* LaunchScreen.storyboard */,
 				076E7760259FAA6C0081BC04 /* Info.plist */,
-				076E776B259FAABB0081BC04 /* template.json */,
+				076E776B259FAABB0081BC04 /* old_template.json */,
+				07FBB43C25C4596C005F60C4 /* template.json */,
 			);
 			path = InverseLambaIOSInterpreter;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 				0797562825A3C0AB00E5A439 /* ButtonGenerator.swift */,
 				07C8280C25A4FEB600C79E88 /* LabelGenerator.swift */,
 				07C8281025A5028200C79E88 /* TextViewGenerator.swift */,
+				07FBB43F25C46C45005F60C4 /* TextFieldGenerator.swift */,
 			);
 			path = UIGenerators;
 			sourceTree = "<group>";
@@ -180,10 +186,11 @@
 				0797562E25A3C53700E5A439 /* ButtonGenerator.swift in Resources */,
 				0797562F25A3C53700E5A439 /* JSONReader.swift in Resources */,
 				0797563025A3C53700E5A439 /* AppDelegate.swift in Resources */,
+				07FBB43D25C4596C005F60C4 /* template.json in Resources */,
 				0797563125A3C53700E5A439 /* SceneDelegate.swift in Resources */,
 				0797563225A3C53700E5A439 /* ViewController.swift in Resources */,
 				076E775F259FAA6C0081BC04 /* LaunchScreen.storyboard in Resources */,
-				076E776C259FAABB0081BC04 /* template.json in Resources */,
+				076E776C259FAABB0081BC04 /* old_template.json in Resources */,
 				076E775C259FAA6C0081BC04 /* Assets.xcassets in Resources */,
 				076E775A259FAA6B0081BC04 /* Main.storyboard in Resources */,
 			);
@@ -196,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FBB44025C46C45005F60C4 /* TextFieldGenerator.swift in Sources */,
 				07C8280D25A4FEB600C79E88 /* LabelGenerator.swift in Sources */,
 				0797562925A3C0AB00E5A439 /* ButtonGenerator.swift in Sources */,
 				0797562625A3C01400E5A439 /* JSONReader.swift in Sources */,

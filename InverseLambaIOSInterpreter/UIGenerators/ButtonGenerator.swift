@@ -10,12 +10,25 @@ import SwiftyJSON
 import UIKit
 
 class ButtonGenerator {
-    static func generateButton(json: JSON) -> UIButton{
+    static func generateButton(lambdaFileFormat: JSON) -> UIButton{
         let button = UIButton();
-        let buttonValue = json["value"].stringValue;
+        
+        var buttonValue = "Button";
+        
+        if(lambdaFileFormat["value"].exists()){
+            buttonValue = lambdaFileFormat["value"].stringValue;
+        }
+        
         button.setTitle(buttonValue, for: []);
-        button.backgroundColor = UIColor.orange;
-        button.frame = CGRect(x: CGFloat(json["x"].intValue), y: CGFloat(json["y"].intValue), width: CGFloat(json["width"].intValue), height: CGFloat(json["height"].intValue));
+        
+        button.backgroundColor = UIColor.black;
+        
+        button.frame = CGRect(
+            x: CGFloat(lambdaFileFormat["l"].intValue),
+            y: CGFloat(lambdaFileFormat["t"].intValue),
+            width: CGFloat(lambdaFileFormat["w"].intValue),
+            height: CGFloat(lambdaFileFormat["h"].intValue));
+        
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside);
         
         return button;
@@ -23,6 +36,7 @@ class ButtonGenerator {
     
     @objc func buttonAction() {
        //some Action
+        //lambdaFileFormat["events"]
         print("button function executed")
     }
 }
